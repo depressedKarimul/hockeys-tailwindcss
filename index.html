@@ -35,6 +35,21 @@
 <style>
   .gfont-Manrope{
     font-family: "Manrope", sans-serif;
+
+
+    .btn-custom {
+    background-color: #1c1c1c; /* Dark background */
+    color: white; /* White text color */
+    padding: 12px 16px; /* Button padding */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+  }
+
+  .btn-custom:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* More pronounced shadow on hover */
+  }
   }
 </style>
 
@@ -46,7 +61,7 @@
     <!-- Navber Section -->
 
     <section>
-      
+
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -87,9 +102,45 @@
         </div>
         <div class="navbar-end">
           <img class="mr-6 hidden lg:block " src="Images/search.png" alt="">
-          <a class="btn bg-primary-button-color px-6 py-4">Get Ticket</a>
+          <a class="btn bg-primary-button-color px-6 py-4 text-white">Get Ticket</a>
         </div>
       </div>
+      
+    </section>
+
+
+    <!-- Banner section -->
+
+    <section class="mt-12">
+      
+
+      <div class="carousel w-full ">
+
+        <div id="slide1" class="carousel-item relative w-full ">
+
+          <div class="lg:h-[550px] h-[200px]  w-full  bg-no-repeat bg-cover lg:rounded-2xl " style="background-image: url('Images/1.png');">
+
+            </div>
+          </div>
+
+          <div class="absolute lg:left-[40px] left-5  right-5 lg:top-[80%]  flex  -translate-y-1/2 transform  justify-start">
+            
+      <div class=" hidden lg:block">
+        <a href="#slide4" class="btn btn-circle w-10 h-10 bg-title-color text-white ">❮</a>
+        <a href="#slide2" class="btn btn-circle w-10 h-10 bg-title-color ml-8 text-white  ">❯</a>
+      </div>
+          </div>
+        </div>
+       </div>
+
+       <!-- Banner box -->
+       <div class="lg:w-[556px] lg:h-40 h-48 lg:relative lg:left-[920px] lg:bottom-48">
+        <div class="text-white  bg-title-color rounded-2xl p-8">
+          <h4 class="text-2xl font-extrabold">Meet all the heroes from the field</h4>
+          <p class="text-base font-medium text-bg-[rgba(255,255,255,0.60)] mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam 
+             turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+      
       
     </section>
 
